@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_menu_background"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<TextView
+    android:id="@+id/tvAnalysisType"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="15dp"
+    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+    android:textColor="#ffffff"
+    android:text="Analysis Type"/>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#B8B8B8"/>
+    <CheckBox
+        android:id="@+id/checkBoxHighest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:checked="true"
+        android:text="Highest"/>
+
+
+    <CheckBox
+        android:id="@+id/checkBoxAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:checked="true"
+        android:text="Average"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxLowest"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Lowest"/>
+
+    <TextView
+        android:id="@+id/tvGraphView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textColor="#ffffff"
+        android:text="Graph View"/>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#B8B8B8"/>
+    <CheckBox
+        android:id="@+id/checkBoxGrid"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:checked="false"
+        android:text="Enable Grid"/>
+
+
+    <TextView
+        android:id="@+id/tvSetDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textColor="#ffffff"
+        android:text="Set Duration"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#B8B8B8"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radioButtonManual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Manual"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radioButtonTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Through Time"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewSetTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Set Time (in seconds)"/>
+
+    <NumberPicker
+        android:id="@+id/timePicker"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:background="#00000000"
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        style="@android:style/TextAppearance.Holo.Widget.Button"
+        android:text="SAVE"/>
+</LinearLayout>
+    </ScrollView>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+
+    <TextView
+        android:id="@+id/tvDA"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="DETAILED ANALYSIS"
+        android:background="#ffffff"
+        android:textColor="#000000"/>
+
+    <TableLayout
+        android:id="@+id/tableLayoutAnalysis2"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TableRow
+        android:layout_marginTop="2dp">
+        <TextView
+            android:id="@+id/textViewHighest2"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimary"
+
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            />
+        <TextView
+            android:id="@+id/textViewAverage2"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+
+            />
+        <TextView
+            android:id="@+id/textViewLowest2"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+
+            />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/textViewHighestLabel2"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#111"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:text="@string/highest"
+            />
+        <TextView
+            android:id="@+id/textViewAverageLabel2"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#111"
+            android:layout_height="wrap_content"
+            android:text="@string/average"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            />
+        <TextView
+            android:id="@+id/textViewLowestLabel2"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#111"
+            android:layout_height="wrap_content"
+            android:text="@string/lowest"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            />
+    </TableRow>
+
+</TableLayout>
+    <TableLayout
+        android:id="@+id/tableLayoutAnalysis3"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:paddingTop="5dp"
+
+        android:paddingBottom="5dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TableRow
+        android:layout_marginTop="2dp">
+        <TextView
+            android:id="@+id/tvdateLabel2"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:text="Date"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            />
+        <TextView
+            android:id="@+id/textViewDate2"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+
+            />
+
+    </TableRow>
+
+</TableLayout>
+    <TableLayout
+        android:id="@+id/tableLayoutAnalysis1"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TableRow
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/textViewTimeLabel"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:textColor="#ffffff"
+            android:text="Time"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            />
+        <TextView
+            android:id="@+id/textViewkgLabel"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:textColor="#ffffff"
+            android:text="Data(Kg.)"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            />
+        <TextView
+            android:id="@+id/textViewNewtonLabel"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="Data(N)"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+
+            />
+    </TableRow>
+
+</TableLayout>
+
+
+<ListView
+        android:id="@+id/listViewDetailedAnalysis"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:divider="@color/colorPrimary"
+        android:dividerHeight="2dp"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+</LinearLayout>
